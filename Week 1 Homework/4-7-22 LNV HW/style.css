@@ -1,0 +1,24 @@
+
+.welcomeContainer {
+
+    font-family: Vintage_fair;
+    text-align: center;
+
+}
+
+html, body {
+    margin: 0;
+  }
+  
+  #inside {
+    display: flex;
+    width: 90px center;
+    justify-content: center;
+    font-size: 60px;
+  }
+
+
+  .menuContainer {
+      text-align: center;
+
+  }
