@@ -41,4 +41,88 @@ for( i = 20; i < 200 ; i++){
   
   console.log(testGrade(95));
   // expected output: "Congrats, You passed!"
+
   
+  //Array
+
+  let menuItems = ['Coney Dog', 'Burrito Bowl', 'Burger', 'Pizza By The Slice'];
+  console.log(menuItems);
+
+  let foodToppings = ['Onions', 'Relish', 'Jalapeno', 'Cheese',];
+
+  console.log(foodToppings);
+
+  let sideItems = ['Chips', 'Cookies', 'Chilli Fries', 'Regular Fries', 'Milkshake'];
+
+  console.log(sideItems);
+
+  let allDrinks = ['Alkaline Water', 'Organic Smoothies', 'Fresh Pressed Juice'];
+
+  console.log(allDrinks);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
