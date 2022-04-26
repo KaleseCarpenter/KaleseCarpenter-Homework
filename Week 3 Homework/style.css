@@ -13,7 +13,7 @@ body{
     background-image: url('https://media4.giphy.com/media/vRGJExTOUta4r9o3mP/giphy.gif');
     background-size: cover;
     background-repeat: no-repeat; 
-    
+    background-attachment: fixed;
     /* vh stands for viewport height -- viewable screen's height. */
     height: 100vh; 
 
@@ -21,7 +21,7 @@ body{
 
 .parent{
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 350px 350px 350px;
     grid-gap: 0px;
     grid-template-rows: 300px 300px 300px;
 }
@@ -35,7 +35,7 @@ body{
     padding:1em;
 }
 
-.parent > div:hover {
+/* .parent > div:hover {
     background-color:pink;
     border-radius: 50%;
     display: grid;
@@ -43,7 +43,7 @@ body{
     color: rgb(190, 141, 212);
     place-items: center;
     padding:1em; 
-}
+} */
 
 
 
