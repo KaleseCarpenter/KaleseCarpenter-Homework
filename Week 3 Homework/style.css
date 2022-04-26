@@ -1,0 +1,49 @@
+/* technique called a CSS reset, Different browsers use different default margins,
+ causing sites to look different by margins. The * means "all elements" (a universal selector),
+ so we are setting all elements to have zero margins, and zero padding, thus making them look the same in all browsers. */
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    margin: 30px;
+    background-image: url('https://media4.giphy.com/media/vRGJExTOUta4r9o3mP/giphy.gif');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    
+    /* vh stands for viewport height -- viewable screen's height. */
+    height: 100vh; 
+
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 0px;
+    grid-template-rows: 300px 300px 300px;
+}
+
+.parent > div {
+    background-color:rgb(144, 91, 194);
+    border-radius: 50%;
+    display: grid;
+    color: rgb(190, 141, 212);
+    place-items: center;
+    padding:1em;
+}
+
+.parent > div:hover {
+    background-color:pink;
+    border-radius: 50%;
+    display: grid;
+    opacity: 0;
+    color: rgb(190, 141, 212);
+    place-items: center;
+    padding:1em; 
+}
+
+
+
