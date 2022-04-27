@@ -59,3 +59,19 @@ function updateTime() {
   }
 
 }
+
+
+
+
+const f = document.querySelector('form');
+
+f.addEventListener('submit', (ev) => {
+  let but = f.querySelector('input');
+  but.type = (but.type === 'search') ? 'submit' : 'search';
+  ev.preventDefault();
+});
+
+document.querySelector('div').addEventListener('click', (ev) => {
+  let field = ev.target;
+  field.contentEditable = field.contentEditable === true ? false: true;
+});

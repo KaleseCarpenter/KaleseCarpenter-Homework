@@ -1,7 +1,51 @@
 .blue {
     background-color: #0781D4;
+   
   }
   
   .red {
     background-color: red;
   }
+
+  #clock {
+    width: 215px;
+    height: 215px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #0781D4;
+    box-shadow: rgb(61, 58, 61);
+   
+  }
+
+  #clock.blue{
+    background-color: #0781D4;
+  }
+
+  body {
+    font-family: arial, sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    
+  }
+  input {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    border-bottom: 1px dashed #ccc;
+    line-height: 1.2;
+    background: transparent;
+  }
+  div {
+    margin: 2em 0;
+  }
+
+controlos{
+  width: 215px;
+  height: 215px;
+  border-radius: 50%;
+  justify-content: center;
+  display: flex;
+  align-items: space-between;
+}
