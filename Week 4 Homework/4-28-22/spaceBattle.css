@@ -1,0 +1,81 @@
+@keyframes slidein {
+    0% {
+      transform: translateX(0%);
+    }
+  
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+
+
+.gameBoard{
+    border:solid white;
+    margin:1em;
+     display:flex;
+    justify-content: space-between;
+}
+.legend{
+    border:solid blue;
+    border-radius:22px;
+    margin:2em;
+    height:22vh;
+    background-color:black;
+    display:flex;
+   
+}
+.us{
+    margin:1em;
+    width:30px;
+}
+.them{
+    border:solid salmon;
+    margin:1em;
+    width:210px;
+}
+.score{
+    border:solid yellow;
+    border-radius:22px;
+    margin:1em;
+    padding:1em;
+    color:white;
+}
+.ship{
+    height:120px;
+    margin-top:20vh;
+    position: relative;
+}
+.alienContainer{
+    margin:1em;
+    justify-content: space-between;
+    color:lime;
+   padding:1em;
+}
+.alien{
+    height:40px;
+}
+.moveSomething{
+    animation: slidein 3s
+    ease-in infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
