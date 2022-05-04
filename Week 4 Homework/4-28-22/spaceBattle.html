@@ -1,49 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Battle</title>
-    <link rel="stylesheet" href="spaceBattle.css">
-</head>
-<body style="background-color: black;">
-    <!-- Space Battle  -->
 ​
-    <div class="gameBoard">
-      <div class="us">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="spaceBattle.css" />
+  </head>
+  <body>
+    <!-- GAMEBOARD -->
+    <h1  class="spcBttl" style="color: rgb(226, 245, 106); text-align: center">
+      Space
+      <span>
         <img
-          src="https://i.pinimg.com/originals/3b/03/94/3b0394153492f7a2e31e80bb9e4c4fb5.gif"
+          src="https://i.gifer.com/1Pt1.gif"
           alt=""
-          class="ship">
-      </div>
-​
-      <div class="them">
-        <div class="alienContainer">
-          <div class="ufo">
-              <img src="https://i.ibb.co/wwtrtVN/Spaceship-b.gif" alt="" class="alien">
-          </div>
-          <div class="ufo">
-              <img src="https://i.ibb.co/wwtrtVN/Spaceship-b.gif" alt="" class="alien">
-          </div>
-          <div class="ufo">
-              <img src="https://i.ibb.co/wwtrtVN/Spaceship-b.gif" alt="" class="alien">
-          </div>
-          <div class="ufo">
-              <img src="https://i.ibb.co/wwtrtVN/Spaceship-b.gif" alt="" class="alien">
-          </div>
-          <div class="ufo">
-              <img src="https://i.ibb.co/wwtrtVN/Spaceship-b.gif" alt="" class="alien">
-          </div>
-          <div class="ufo">
-              <img src="https://i.ibb.co/wwtrtVN/Spaceship-b.gif" alt="" class="alien">
-          </div>
-​
+          class="spaceship"/>
+      </span>
+      Battle
+    </h1>
+    <div class="board">
+      <!-- PlayerOne -->
+      <img
+        src="https://cdna.artstation.com/p/assets/images/images/014/194/256/original/andrew-smith-ship6.gif?1542897082S"
+        alt=""
+        onclick="attackAlien()"
+        class="ussr"
+      />
+      ​
+      <!-- PlayerTwo -->
+      <div class="alienMob">
+        <div class="alienHolster" id="a1">
+          <img
+            src="https://i.ibb.co/wwtrtVN/Spaceship-b.gif"
+            alt=""
+            class="ufo"/>
+
+          <div class="counter">100</div>
+        </div>
+        <div class="alienHolster" id="a2">
+          <img
+            src="https://i.ibb.co/wwtrtVN/Spaceship-b.gif"
+            alt=""
+            class="ufo"/>
+
+          <div class="counter">100</div>
+        </div>
+        <div class="alienHolster" id="a3">
+          <img
+            src="https://i.ibb.co/wwtrtVN/Spaceship-b.gif"
+            alt=""
+            class="ufo"/>
+
+          <div class="counter">100</div>
+        </div>
+        <div class="alienHolster" id="a4">
+          <img
+            src="https://i.ibb.co/wwtrtVN/Spaceship-b.gif"
+            alt=""
+            class="ufo"/>
+
+          <div class="counter">100</div>
+        </div>
+        <div class="alienHolster" id="a5">
+          <img
+            src="https://i.ibb.co/wwtrtVN/Spaceship-b.gif"
+            alt=""
+            class="ufo"/>
+
+          <div class="counter">100</div>
+        </div>
+        <div class="alienHolster" id="a6">
+          <img
+            src="https://i.ibb.co/wwtrtVN/Spaceship-b.gif"
+            alt=""
+            class="ufo"/>
+          <div class="counter">100</div>
         </div>
       </div>
     </div>
-​
-    <h1>Legend:</h1>
+
+    <hr />
+
+    <button onclick="showDirections()">Start Fight</button>
+
+    <h1 style="color:rgb(245, 97, 102); text-align: center">SCOREBOARD</h1>
+
     <div class="legend">
       <p class="score">
         USS Assembly :
@@ -53,16 +97,11 @@
       <hr />
 ​
       <p class="score">
-        Alien Team :
+        Galactic Soldiers :
         <span>0</span>
       </p>
     </div>
 
-
-    <button onclick="battle()">Start Game</button>
-
-
-
-    <script src="spaceBattle.css"></script>
-</body>
+    <script src="spaceBattle.js"></script>
+  </body>
 </html>
