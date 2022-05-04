@@ -5,9 +5,18 @@
     50%{
         transform: translateX(65vw);
     }
+    75%{
+        transform: translateY(45vw);
+    }
+    85%{
+        transform: translateY(20vw);
+    }
     100%{
         transform: translateX(0vw);
     }
+
+
+
 }
 
 body {
